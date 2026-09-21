@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz_styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- PANTALLA INICIO -->
+        <section id="start-screen" class="screen">
+            <h1>Quiz</h1>
+
+            <p>
+                Preguntas de seleccion unica.
+            </p>
+
+            <div class="start-buttons">
+                <button id="start-btn">Comenzar Quiz</button>
+                <button id="edit-btn">Editar Preguntas</button>
+            </div>
+        </section>
+
+
+        <!-- PANTALLA QUIZ -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <div class="quiz-header">
+                <span id="progress"></span>
+                <span id="score"></span>
+            </div>
+
+            <div id="question-container"></div>
+
+            <div id="feedback"></div>
+
+            <button id="next-btn" class="hidden">
+                Siguiente
+            </button>
+
+
+            <button id="back-btn">
+                Volver al inicio
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA RESULTADOS -->
+        <section id="result-screen" class="screen hidden">
+
+            <h2> Quiz Finalizado</h2>
+
+            <p id="final-score"></p>
+
+            <button id="restart-btn">
+                Volver a empezar
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA EDICION -->
+        <section id="edit-screen" class="screen hidden">
+
+            <div class="edit-header">
+                <h2> Editar preguntas</h2>
+
+
+            </div>
+
+            <div id="edit-container"></div>
+
+            <button id="add-question-btn">
+                 Agregar pregunta
+            </button>
+
+            <button id="save-btn">
+                Guardar cambios
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="quiz_script.js"></script>
+
+</body>
+</html>
