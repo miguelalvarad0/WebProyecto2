@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 50%;
     max-width: 800px;
     margin: 50px auto;
 }
@@ -18,8 +18,6 @@ body {
 .screen {
     background: white;
     padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -39,16 +37,9 @@ body {
 }
 
 #start-screen p {
-    color: #666;
+    color: #747272;
     margin-bottom: 30px;
 }
-
-.start-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
 
 /* BOTONES */
 
@@ -120,13 +111,6 @@ button:hover {
 
 
 /* EDICION */
-
-.edit-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
 .edit-question {
     border: 1px solid #ddd;
