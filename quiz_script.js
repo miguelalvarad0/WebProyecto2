@@ -1,5 +1,4 @@
 // PREGUNTAS
-
 let questions = [
     {
         question: "¿Cual es el deporte mas bonito del mundo?",
@@ -52,15 +51,11 @@ let questions = [
     }
 ];
 
-
 // VARIABLES DE QUIZ
-
 let currentQuestion = 0;
 let userScore = 0;
 
-
 // ELEMENTOS DEL DOM
-
 const startScreen = document.getElementById("start-screen");
 const quizScreen = document.getElementById("quiz-screen");
 const resultScreen = document.getElementById("result-screen");
@@ -71,36 +66,26 @@ const editBtn = document.getElementById("edit-btn");
 const restartBtn = document.getElementById("restart-btn");
 const backBtn = document.getElementById("back-btn");
 
-const questionContainer =
-    document.getElementById("question-container");
+const questionContainer = document.getElementById("question-container");
 
-const progress =
-    document.getElementById("progress");
+const progress = document.getElementById("progress");
 
-const score =
-    document.getElementById("score");
+const score = document.getElementById("score");
 
-const feedback =
-    document.getElementById("feedback");
+const feedback = document.getElementById("feedback");
 
-const nextBtn =
-    document.getElementById("next-btn");
+const nextBtn = document.getElementById("next-btn");
 
-const finalScore =
-    document.getElementById("final-score");
+const finalScore = document.getElementById("final-score");
 
-const editContainer =
-    document.getElementById("edit-container");
+const editContainer = document.getElementById("edit-container");
 
-const addQuestionBtn =
-    document.getElementById("add-question-btn");
+const addQuestionBtn = document.getElementById("add-question-btn");
 
-const saveBtn =
-    document.getElementById("save-btn");
+const saveBtn = document.getElementById("save-btn");
 
 
 // CAMBIAR PANTALLA
-
 function showScreen(screen) {
 
     startScreen.classList.add("hidden");
@@ -113,7 +98,6 @@ function showScreen(screen) {
 
 
 // INICIAR QUIZ
-
 function startQuiz() {
 
     currentQuestion = 0;
@@ -126,7 +110,6 @@ function startQuiz() {
 
 
 // MOSTRAR PREGUNTA
-
 function renderQuestion() {
 
     questionContainer.innerHTML = "";
@@ -185,7 +168,6 @@ function renderQuestion() {
 
 
 // VERIFICAR RESPUESTA
-
 function checkAnswer(selectedIndex, selectedButton) {
 
     const current = questions[currentQuestion];
@@ -232,7 +214,6 @@ function checkAnswer(selectedIndex, selectedButton) {
 
 
 // SIGUIENTE PREGUNTA
-
 function nextQuestion() {
 
     currentQuestion++;
@@ -250,7 +231,6 @@ function nextQuestion() {
 
 
 // RESULTADOS
-
 function showResults() {
 
     showScreen(resultScreen);
@@ -260,7 +240,6 @@ function showResults() {
 }
 
 // EDITAR PREGUNTAS
-
 function openEditor() {
 
     showScreen(editScreen);
@@ -381,7 +360,6 @@ function renderEditor() {
 }
 
 // GUARDAR CAMBIOS
-
 function saveQuestions() {
 
     const questionDivs =
@@ -430,7 +408,6 @@ function saveQuestions() {
 }
 
 // AGREGAR NUEVA PREGUNTA
-
 function addQuestion() {
 
     questions.push({
@@ -451,7 +428,6 @@ function addQuestion() {
 }
 
 // EVENT LISTENERS
-
 startBtn.addEventListener("click", startQuiz);
 
 editBtn.addEventListener("click", openEditor);
